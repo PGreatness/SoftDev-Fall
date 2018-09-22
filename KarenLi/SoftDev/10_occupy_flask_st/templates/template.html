@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <head>
+      <style>
+	table, th, td {
+	border: 1px solid black;
+	}
+      </style>
+      <title>Occupations Data</title>
+    </head>
+    
+    <h3>Random Occupation: {{randOcc}}</h3>
+
+    <table style="width:100%">
+      <tr>
+	<th> Job Class </th>
+	<th> Percentage </th>
+      </tr>
+
+      {% for occupation in occList %}
+      <tr>
+	<td> {{occupation}}</td>
+	<td> {{occList[occupation]}}</td>
+      </tr>
+      {% endfor %}
+
+  </body>
+</html>
