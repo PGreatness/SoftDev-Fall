@@ -1,7 +1,10 @@
+# OccupationalHazard: Karen Li, Ahnaf Hasan
+# SoftDev1 pd07
+# K #10: Jinja Tuning 
+# 2018 - 09 - 24
+
 from flask import Flask, render_template
-
 app = Flask(__name__)
-
 import csv, random
 
 
@@ -30,7 +33,7 @@ def fillList():
 
 	    
 
-       	    #fills occupationList with occupations with frequency dependent on percentagE
+       	    #fills occupationList with occupations with frequency dependent on percentage
 
             occupationDic[row['Job Class']] = row['Percentage']
 
