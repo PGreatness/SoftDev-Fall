@@ -19,7 +19,7 @@ def fillList():
 
     #reads csv file
 
-    csvFileObject = open( 'occupations.csv', 'r')
+    csvFileObject = open( './data/occupations.csv', 'r')
 
     dictionaryReader = csv.DictReader( csvFileObject)
 
@@ -63,7 +63,7 @@ def randomOccupation():
 
 def template():
 
-    return render_template('template.html', randOcc = randomOccupation(), occList = occupationDic) 
+    return render_template('template.html', randOcc = randomOccupation(), occDict = occupationDic) 
 
 
 
