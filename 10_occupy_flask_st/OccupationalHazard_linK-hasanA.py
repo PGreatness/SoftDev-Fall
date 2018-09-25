@@ -66,7 +66,13 @@ def home():
 
 def template():
 
-    return render_template('template.html', randOcc = randomOccupation(), occDict = occupationDic) 
+    return render_template('template.html', 
+                            randOcc = randomOccupation(), 
+                            occDict = occupationDic,
+                            title = "Occupation Data",
+                            header = "United States Occupations Information",
+                            info = "This page shows occupations in the United States along with the percentage of the U.S. workforce it comprises."
+                            ) 
 
 
 
