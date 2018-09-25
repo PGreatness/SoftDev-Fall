@@ -55,7 +55,10 @@ def randomOccupation():
 
     return random.choice(weightedOccupationList)
 
+@app.route("/")
 
+def home():
+    return "<a href='occupations'>Click to view the occupation table</a>"
 
 
 
