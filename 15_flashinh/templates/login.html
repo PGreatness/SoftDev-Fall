@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Login{% endblock %}</title>
+  </head>
+  <body>
+  {% block description %} {% set msg = get_flashed_messages() %}
+                            {% for messages in msg %}
+                              {% if messages %}
+                                {{messages}}
+                              {% endif %}
+                            {% endfor %}
+                          {% endblock %}
+  {% block forms %}
+    <form action = "/auth" method = "POST">
+      Input your Username below: <br>
+      <input type = "text" name = "username">
+      <br>
+      Input your password below: <br>
+      <input type = "text" name = "pass">
+      <input type = "submit" name = "subm">
+      </form>
+    {% endblock %}
+  </body>
+</html>

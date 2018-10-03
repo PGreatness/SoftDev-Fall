@@ -1,0 +1,43 @@
+{% extends 'login.html' %}
+{% block title %}Login Success
+{% endblock title %}
+{% block description %}Thank you for logging in {{user}}! <br>
+{% endblock description %}
+{% block forms %}
+  <form action = "/logout" method = "GET">
+    <input type = "submit" name = "logout", value = "logout">
+  </form>
+{% endblock forms %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    Thank you for logging in {{user}}! <br>
+    <form action = "/logout" method = "GET">
+      <input type = "submit" name = "logout", value = "logout">
+      </form>
+
+  </body>
+</html>
+--->
