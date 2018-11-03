@@ -1,0 +1,30 @@
+body {
+    background-color: darkgrey;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+#heading {
+    color:white;
+    text-align: center;
+    background-color: lightgray
+}
+#nav_bar {
+    color:black;
+    width: 225px;
+    float: left
+}
+a {
+    color: white
+}
+#main_header {
+    text-align:center
+}
+.content {
+    width:1575px;
+    display: inline-block;
+    text-align:left
+}
+.footer {
+    background-color: grey;
+    color:lightgrey;
+    text-align:right
+}
