@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Foundation </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/css/foundation.css">
+    </head>
+
+    <body>
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu" data-magellan> <!-- Data Magellan is a smooth scroll to the specified point in page -->
+                    <li class="menu-text"> This is a Top Bar</li>
+                    <li><a href="#cells"> Cells</a></li>
+                    <li><a href="#buttons"> Buttons</a></li>
+                    <li><a href="#tables"> Tables</a></li>
+                    <li><a href="#switches"> Switches</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="cells">
+            <h1> Cells </h1>
+            <div class="grid-x">
+                <div class="cell large-8 medium-6 small-4">
+                    <div class="primary callout">
+                        This is a "6/4/2" cell, meaning it is size 6 when the window is large, 4 when the window is medium, and 2 when the window is small.
+                        (Horizontal)
+                    </div>
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="cell large-8 medium-2 small-12">
+                    <div class="primary callout">
+                        Watch this cell resize!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-6">
+                <div id="buttons">
+                    <h1> Buttons </h1>
+                        <a href="#" class="button tiny"> This is a tiny button </a>
+                        <a href="#" class="button small alert"> This is a small alert button </a>
+                        <a href="#" class="button success"> This is a normal success button </a>
+                        <a href="#" class="button large"> This is a large button </a>
+                    </div>
+                </div>
+            <div class="cell large-6">
+                <div id="tables">
+                    <h1> Tables </h1>
+                    <table class="hover"> <!-- Hover effect -->
+                        <thead>
+                            <tr>
+                                <th> Numbers of Sides </th>
+                                <th> Name of Polygon </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 3 </td>
+                                <td> Triangle</td>
+                            </tr>
+                            <tr>
+                                <td> 4 </td>
+                                <td> Quadrilateral </td>
+                            </tr>
+                            <tr>
+                                <td> 5 </td>
+                                <td> Pentagon </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="switches">
+            <h1> Switches </h1>
+            <div class="grid-x">
+                <div class="cell large-4 medium-2">
+                    <p> Yes or No? </p>
+                    <div class="switch">
+                        <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+                        <label class="switch-paddle" for="exampleSwitch">
+                            <span class="switch-active" aria-hidden="true">Yes</span>
+                            <span class="switch-inactive" aria-hidden="true">No</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pagination">
+            <footer>
+                <label> Pages </label>
+                <nav aria-label="Pagination">
+                    <ul class="pagination">
+                        <li class="pagination-previous disabled"> Previous <span class="show-for-sr">page</span></li>
+                        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                        <li><a href="#" aria-label="Page 2">2</a></li>
+                        <li><a href="#" aria-label="Page 3">3</a></li>
+                        <li><a href="#" aria-label="Page 4">4</a></li>
+                        <li class="ellipsis" aria-hidden="true"></li>
+                        <li><a href="#" aria-label="Page 12">12</a></li>
+                        <li><a href="#" aria-label="Page 13">13</a></li>
+                        <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </body>
