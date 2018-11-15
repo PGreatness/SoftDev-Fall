@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data about stuff</title>
+</head>
+<body>
+    <!--<h1>{{ success }}</h1>-->
+    <h3>This was taken in terms of: {{ source }}</h3>
+    <h4>Comparisons are done as such --> "&LT;Source&GT;&LT;Currency&GT;"</h4><br>
+    {% for item in data %}
+        <p>{{ item }} : {{ data[item] }} </p><hr>
+    {% endfor %}
+</body>
+</html>
