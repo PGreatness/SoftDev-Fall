@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This can't be!</title>
+</head>
+<body>
+    <center>
+    <h2>From {{ start }} to {{ end }}, the temperature for January through December is shown below:</h2><br>
+    <table border="1">
+        {% for m_vcombo in months %}
+        <tr>
+            <th>
+                <b>{{ m_vcombo }}</b>
+            </th>
+            <td>
+                {{ months[m_vcombo] }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h4>That's a bit depressing, so let's look at this instead</h4>
+    <img src="{{ cat }}">
+    <p><b>Interesting fact:</b> {{ fact }}</p>
+    </center>
+    
+</body>
+</html>
