@@ -1,4 +1,4 @@
-/* AstoriaGang (Roster: Shafali, Ahnaf Hasan)
+/* AstoriaGang (Roster: Adil Gondal, Shafali Gupta, Ahnaf Hasan)
 SoftDev1 pd07
 K30 -- Sequential Progression III: Season of the Witch
 <2018>-<12>-<20>
@@ -95,6 +95,7 @@ var addToFib = function() {
     }
     l.append(a) // add on to the end of the list
 }
+
 
 // -------------------- Function Declarations Above ------------------ //
 
