@@ -36,7 +36,6 @@ var bestFib = function(n) {
     let second = list.children[list.childElementCount - 2].innerHTML // the second-to-last elem on the list
     return Number(first) + Number(second) // Fib is adding the last to nums so made into O(1)
 }
-
 /**
  * Appends the next item to the list of "items".
  */
@@ -49,7 +48,7 @@ var listAppend = function() {
 }
 
 /**
- * Changes the header at the top of the page to be the same as the 
+ * Changes the header at the top of the page to be the same as the
  * item hovered over.
  * @param e the MouseEvent (mouseover)
  */
@@ -70,7 +69,7 @@ var reset = function() {
 }
 
 /**
- * Removes the selected item from the list. 
+ * Removes the selected item from the list.
  * @param e the MouseEvent (click)
  */
 var removeItem = function(e) {
@@ -79,7 +78,7 @@ var removeItem = function(e) {
 }
 
 /**
- * Appends the next Fibonacci number to the list. Uses the _fibonacci_ and 
+ * Appends the next Fibonacci number to the list. Uses the _fibonacci_ and
  * the _bestFib_ functions.
  */
 var addToFib = function() {
@@ -108,7 +107,7 @@ b.addEventListener('click', listAppend ) // listen for clicks (sounds like *clic
 
 var col = document.getElementById('thelist')
 
-// The name's...Over. 
+// The name's...Over.
 col.addEventListener('mouseover', mouseOver )
 
 col.addEventListener('mouseout', reset ) // When your mouse is super chill and exits the list
